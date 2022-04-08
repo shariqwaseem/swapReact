@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/images/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Shiko Inu ($Shiko) is a peer-to-peer digital currency with instant rewards for holders"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/images/hero.png" />
+    
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <title>Shiko Inu</title>
+  </head>
+  <body style = "background-color: #FCFCFC;">
+    <div id="root"></div>
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="https://shiko-ino.web.app"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src = "%PUBLIC_URL%/js/script.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.btn').click(function(){
+          $('.items').toggleClass("show");
+          $('ul li').toggleClass("hide");
+          $('#header').toggleClass("header-shade");
+        });
+        $('.items').click(function(){
+          $('.items').toggleClass("show");
+          $('ul li').toggleClass("hide");
+          $('.hamburger').toggleClass("show");
+        });
+      });
+    </script>
+  </body>
+</html>
